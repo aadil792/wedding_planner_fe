@@ -85,7 +85,6 @@
             text-decoration: none;
             color: rgb(0, 0, 0);
             font-size: 15px;
-
         }
 
         
@@ -128,6 +127,10 @@
             color: aliceblue;
             cursor: pointer;
         }
+        .id-pages-a a{
+            position: relative;
+            bottom: 20px;
+       }
 
         .login-input-div button:hover {
             background-color: rgb(116, 30, 30);
@@ -191,8 +194,10 @@
                     <input type="password" placeholder="Password"><br>
                     <button>Log In</button><br>
                     <a id="login-back-a" href="index.html">Back</a> <br>
-                    <a href="#">Forgot your login information?</a><br>
-                    <a href="#">Log in using Single Sign-On </a>
+                    <div class="id-pages-a">
+                        <a href="#">Forgot your login information?</a><br>
+                        <a href="#">Log in using Single Sign-On </a>
+                    </div>
 
                 </form>
             </div>
