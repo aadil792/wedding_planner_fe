@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+     <link rel="icon" href="wedding_logo.png" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@1,300..900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Open+Sans:ital,wght@1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@1,300..900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Oleo+Script+Swash+Caps:wght@400;700&family=Open+Sans:ital,wght@1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@1,300..900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Oleo+Script+Swash+Caps:wght@400;700&family=Open+Sans:ital,wght@1,300..800&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@1,300..900&display=swap");
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .login-main-div {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            height: 100vh;
+        }
+
+        .login-child-1 {
+
+            background-color: rgb(228, 199, 199);
+            width: 30vw;
+            height: 90vh;
+            position: relative;
+            top: 20px;
+            border-radius: 10px;
+            align-content: center;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .login-child-1-h2 {
+            text-align: center;
+            height: 100px;
+            background-color: rgb(216, 135, 162);
+
+        }
+
+        .login-child-1-h2 h2 {
+            color: rgb(0, 0, 0);
+            font-family: "Homemade Apple", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+        }
+
+        .login-child-1-h2 h4 {
+            font-weight: 500;
+        }
+
+
+
+        #w {
+            color: brown;
+            font-family: "Homemade Apple", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 35px;
+        }
+
+
+        .login-input-div {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        #login-back-a {
+            display: flex;
+            padding: 20px 40px 8px;
+            width: 30px;
+            margin-left: 20px;
+            align-content: center;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+
+        }
+
+        
+
+        .login-input-div input {
+            margin-top: 20px;
+            height: 40px;
+            width: 250px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            text-align: center;
+            border-radius: 3px;
+            font-size: 15px;
+        }
+
+        .login-input-div input::placeholder {
+            text-align: center;
+            color: rgb(40, 40, 40);
+            outline-style: none;
+        }
+
+        .login-input-div input:focus {
+            outline-style: none;
+            box-shadow: none;
+        }
+
+        .login-input-div input:hover {
+            background-color: rgb(194, 199, 202);
+        }
+
+        .login-input-div button {
+            margin-top: 20px;
+            height: 40px;
+            width: 150px;
+            margin-left: 50px;
+            background-color: brown;
+            border: none;
+            box-shadow: 0px 0px 5px black;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        .login-input-div button:hover {
+            background-color: rgb(116, 30, 30);
+        }
+
+        .login-input-div a {
+            text-decoration: none;
+            font-size: 0.7rem;
+            text-align: center;
+            position: relative;
+            left: 50px;
+        }
+
+
+        .login-back-btn:hover {
+            background-color: rgb(85, 29, 29);
+        }
+
+
+
+        .img-groom {
+            display: flex;
+            margin-top: 100px;
+            margin-left: 20px;
+            background-image: url('bride-and-groom.jpg');
+            height: 55vh;
+            width: 25vw;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px black;
+            font-weight: 500;
+            background-color: rgb(255, 249, 237);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="login-child-1-h2">
+            <h2>
+                <span id="w" style="color: brown;">W</span>edding <span id="w" style="color: brown;">P</span>lanner
+            </h2>
+        </div>
+    </nav>
+    <div class="login-main-div">
+        <!-- <button class="login-back-btn"><a id="login-back-a" href="home.html">Back</a> </button> -->
+        <div class="img-groom">
+        </div>
+        <div class="login-child-1">
+            <div class="login-child-1-h2">
+                <h2>
+                    <span id="w" style="color: brown;">W</span>edding <span id="w" style="color: brown;">P</span>lanner
+                </h2>
+                <h4>Client Registration</h4>
+            </div>
+            <div class="login-input-div">
+                <form>
+                    <input type="text" placeholder="User Name *" required><br>
+                    <input type="number" placeholder="Phone number *" required><br>
+                    <input type="password" placeholder="Password *" required><br>
+                       <input type="email" placeholder="Email *" required><br>
+                    <button>Log In</button><br>
+                    <a id="login-back-a" href="home.html">Back</a> <br>
+                    <a href="#">Forgot your login information?</a><br>
+                    <a href="#">Log in using Single Sign-On </a>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

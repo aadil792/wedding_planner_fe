@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+     <link rel="icon" href="wedding_logo.png" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@1,300..900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Open+Sans:ital,wght@1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@1,300..900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Oleo+Script+Swash+Caps:wght@400;700&family=Open+Sans:ital,wght@1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@1,300..900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Oleo+Script+Swash+Caps:wght@400;700&family=Open+Sans:ital,wght@1,300..800&family=Permanent+Marker&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@1,300..900&display=swap");
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .login-back-btn {
+            height: 30px;
+            width: 100px;
+            align-self: center;
+            margin-top: 5px;
+            margin-left: 20px;
+            background-color: brown;
+            border: none;
+            box-shadow: 0px 0px 5px black;
+            color: aliceblue;
+            cursor: pointer;
+            margin-left: 200px;
+        }
+
+        .login-back-btn:hover {
+            background-color: rgb(85, 29, 29);
+        }
+
+        #login-back-a {
+            padding: 30px 30px 8px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+        }
+
+        .event-table {
+            background-image: url('wedding_bg_login.webp');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 80vh;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px black;
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+
+        }
+
+        .event-div-child1 {
+            align-content: center;
+        }
+
+        .event-main-div {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .event-table td,
+        input {
+            width: 200px;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        #event-last-td {
+            width: 400px;
+        }
+
+        #event-book-btn button {
+            width: 180px;
+            height: 40px;
+            margin-top: 10px;
+            margin-left: 150px;
+            background-color: burlywood;
+            box-shadow: 0px 0px 5px black;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #event-book-btn button:hover {
+            background-color: rgb(143, 117, 83);
+        }
+
+        .event-table table {
+            margin-top: 50px;
+        }
+
+        #w {
+            color: brown;
+            font-family: "Homemade Apple", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 35px;
+        }
+
+        .login-child-1-h2 {
+            background-color: rgb(231, 216, 195);
+        }
+
+        .login-child-1-h2 h2 {
+            color: rgb(0, 0, 0);
+            font-family: "Homemade Apple", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+            margin-left: 20px;
+        }
+
+        .event-table h3 {
+            color: brown;
+            font-family: "Oleo Script Swash Caps", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 25px;
+            text-align: center;
+            position: relative;
+            top: 40px;
+        }
+
+        .login-child-1-h2 {
+            display: flex;
+            text-align: center;
+        }
+
+        .login-child-1-h2 h4 {
+            font-weight: 500;
+        }
+
+        .event-main-div {
+            display: flex;
+        }
+
+
+        .event-div-child1 h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: "Oleo Script Swash Caps", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: rgba(253, 0, 0, 0.728);
+        }
+
+        .event-table {
+            width: 50vw;
+            margin-top: 30px;
+        }
+
+        .event-div-child1 p {
+            text-align: center;
+            padding: 0 15px;
+            width: 50vw;
+            margin: auto;
+            align-content: center;
+        }
+
+         #p1-event {
+            margin-top: 20px;
+            height: 40vh;
+            width: 18vw;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px black;
+            font-weight: 500;
+            background-color:rgb(255, 249, 237);
+            background-image: url('wedding_l.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+       
+
+        .event-table label {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 10px;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            align-content: last baseline;
+        }
+
+        .event-table table {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .event-table input {
+            margin-top: 20px;
+            height: 40px;
+            width: 250px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            text-align: center;
+            border-radius: 3px;
+            font-size: 15px;
+        }
+
+        .event-table input::placeholder {
+            text-align: center;
+            color: rgb(40, 40, 40);
+            outline-style: none;
+        }
+
+        .event-table input:focus {
+            outline-style: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="login-child-1-h2">
+            <h2>
+                <span id="w" style="color: brown;">W</span>edding <span id="w" style="color: brown;">P</span>lanner
+            </h2>
+
+        </div>
+
+    </nav>
+    <div class="event-main-div">
+
+        <div class="event-div-child1">
+            <p id="p1-event">
+
+                
+            </p>
+            
+
+        </div>
+        <div class="event-table">
+            <form>
+                <table>
+                    <thead>
+                        <h3>
+                            Book Your Wedding Date Early
+                        </h3>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+
+                                <input type="text" placeholder="First name *" required>
+                            </td>
+                            <td>
+
+                                <input type="text" placeholder="Last name *" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <input type="email" placeholder="Email *" required>
+                            </td>
+                            <td>
+
+                                <input type="number" placeholder="Phone *" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Booking dates from </label>
+                                <input type="date" required>
+                            </td>
+                            <td>
+                                <label> To </label>
+                                <input type="date" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <input type="text" placeholder="Country *" required>
+                            </td>
+                            <td>
+
+                                <input type="text" placeholder="Wedding Type *" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="event-book-btn" colspan="2"><button>Book event </button> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button class="login-back-btn"><a id="login-back-a" href="home.html">Back</a> </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
