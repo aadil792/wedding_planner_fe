@@ -215,6 +215,7 @@ body {
 
 .child-3-div1 img {
   width: 50vw;
+  background-image: cover;
 }
 .child-three-div p {
   font-size: 30px;
